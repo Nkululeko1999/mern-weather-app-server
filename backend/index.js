@@ -13,7 +13,7 @@ const ipGeolocationApiKey = process.env.IP_GEOLOCATION_API_KEY;
 app.use(express.json());
 app.use(
     cors({
-      origin: "http://localhost:3000", 
+      origin: ["http://localhost:3000", "https://weather-app-vnot.onrender.com"],
       allowedHeaders: 'Content-Type, Authorization',
     })
   );
